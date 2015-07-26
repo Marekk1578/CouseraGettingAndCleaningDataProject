@@ -62,5 +62,5 @@ melted <- melt(Clean, id.vars=c("subject", "activity"))
 #Apply the summary and write out to file
 aggreateddata <- ddply(melted, c("subject", "activity", "variable"), summarise,
       mean = mean(value), sd = sd(value))
-write.table(aggreateddata, "MergedDataF2_Aggregate.txt")
+write.table(aggreateddata, "MergedDataF2_Aggregate.txt", row.name=FALSE )
 
