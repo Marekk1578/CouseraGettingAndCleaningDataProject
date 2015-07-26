@@ -10,7 +10,7 @@ a. **ReadMe.MD** - This file, it details the files in the repo and how to reexec
 b. **Codebook.md** - The data codebook (a.k.a. data dictionary) that describes the variables in the datasets
 c. **run_analysis.R** - The R script which takes the original source data and transforms it into the required output files
 d. **MergedDataF1.txt** - A tidy dataset which contains measurements on the mean and standard deviation only for each measurement
-e. **MergedDataF2.txt** - A tidy dataset which contains measurements on the mean and standard deviation only  for each measurement with descriptive variable names
+e. **MergedDataF2_Aggregate.txt** - A tidy dataset which contains measurements on the mean and standard deviation only  for each measurement with descriptive variable names
 
 In order to run the R script
 

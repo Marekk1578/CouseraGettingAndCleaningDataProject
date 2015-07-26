@@ -62,7 +62,11 @@ The transformation applied to the dataset is as follows
 11. Assign a name of "subject" to all the attributes in the subject dataset
 12. bind the subject, y and x data frames together
 13. Write the data out to  MergedDataF1.txt
-14. Create a dummy data frame and output the file MergedDataF1.txt
+14. Reshape the dataset using melt so that it can be easily summarised (i.e. pivot the data)
+15. Calculated summary variables (mean and SD) for each subject and activity
+16. Write this calculated data out to MergedDataF2_Aggregate.txt
+
+
 Citations
 
 (1) UCI Machine Learning Repository (2013) 
