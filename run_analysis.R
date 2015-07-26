@@ -49,16 +49,18 @@ names(y) <- "activity"
 #Appropriately labels the data set with descriptive variable names.
 names(subject) <- "subject"
 Clean <- cbind(subject, y, x)
-#dim(Clean) 
-#head(Clean)
 write.table(Clean, "MergedDataF1.txt") 
+head(Clean)
 
 #creates a second, independent tidy data set with the average of 
 #each variable for each activity and each subject.
+library(plyr)
+library(reshape2)
 
-#Ran out of time so haven't done this bit
-#I will be keen to see how other students attempted this in the 
-#peer review marking exercise
+#melt the so its easy to group
+melted <- melt(Clean, id.vars=c("subject", "activity"))
+#Apply the summary and write out to file
+aggreateddata <- ddply(melted, c("subject", "activity", "variable"), summarise,
+      mean = mean(value), sd = sd(value))
+write.table(aggreateddata, "MergedDataF2_Aggregate.txt")
 
-dummy <- 1
-write.table(dummy, "MergedDataF2.txt")

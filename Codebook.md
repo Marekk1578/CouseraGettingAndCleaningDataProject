@@ -63,10 +63,6 @@ The transformation applied to the dataset is as follows
 12. bind the subject, y and x data frames together
 13. Write the data out to  MergedDataF1.txt
 14. Create a dummy data frame and output the file MergedDataF1.txt
-
-Please note due to time constraints the requirement "From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject." has not been fulfilled. A placeholder file "MergedDataF2.txt" has however been created.
-
-
 Citations
 
 (1) UCI Machine Learning Repository (2013) 
